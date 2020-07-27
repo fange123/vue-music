@@ -1,16 +1,24 @@
 <template>
   <div id="app">
-    <router-view/>
+    <MusicHeader></MusicHeader>
+    <Tab></Tab>
   </div>
 </template>
 
 <script>
+  import MusicHeader from "components/music-header/MusicHeader"
+  import Tab from "components/tab/Tab"
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    MusicHeader,
+    Tab
+  }
+
 }
 </script>
 
 <style>
-#app {
-}
+
+
 </style>
